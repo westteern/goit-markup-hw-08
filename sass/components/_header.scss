@@ -1,0 +1,15 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: $titel-text-color;
+}
+.nav {
+    @include centredFlex(flex, null, center);
+}
+
+
+
+

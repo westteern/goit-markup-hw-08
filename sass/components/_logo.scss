@@ -1,0 +1,24 @@
+.logo {
+    color: $titel-text-color;
+
+    font-family: $second-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+    .footer & {
+        color: $second-accent-color;
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    &--blue {
+        color: $accent-color;
+    }   
+}
+
+

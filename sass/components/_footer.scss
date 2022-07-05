@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;      
+}
+.footer__content {
+    @include centredFlex(flex, null, baseline)
+}
+.footer__titel {
+    @extend %text;
+    
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: $second-accent-color;
+}
+.footer__social {
+    margin-left: 70px;
+}
+.footer__form {
+    margin-left: auto;
+}
+.social-link--bcg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+

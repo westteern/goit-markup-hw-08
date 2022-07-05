@@ -1,0 +1,10 @@
+.team {
+    background-color: #f5f4fa;
+}
+.team-list {
+    @extend %list;
+    display: flex;        
+}
+.team-list .team-card + .team-card {
+    margin-left: 30px;
+}

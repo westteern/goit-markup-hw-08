@@ -1,0 +1,12 @@
+.social-list {
+    @extend %list;
+    @include centredFlex(flex, center, null);
+        
+    .social-list__item {
+        width: 44px;
+        height: 44px;
+    }    
+}
+.social-list .social-list__item + .social-list__item {
+    margin-left: 10px;
+}
