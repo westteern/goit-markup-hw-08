@@ -286,6 +286,8 @@ span {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .benefits-list__item {
@@ -301,10 +303,6 @@ span {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.benefits-list .benefits-list__item + .benefits-list__item {
-  margin-left: 30px;
 }
 
 .benefits-list__titel {
@@ -324,6 +322,8 @@ span {
 
 .do-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .do-list__item {
   display: flex;
@@ -349,20 +349,14 @@ span {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.do-list .do-list__item + .do-list__item {
-  margin-left: 30px;
-}
-
 .team {
   background-color: #f5f4fa;
 }
 
 .team-list {
   display: flex;
-}
-
-.team-list .team-card + .team-card {
-  margin-left: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team-card {
@@ -395,14 +389,11 @@ span {
 .social-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 .social-list .social-list__item {
   width: 44px;
   height: 44px;
-}
-
-.social-list .social-list__item + .social-list__item {
-  margin-left: 10px;
 }
 
 .social-link {
@@ -430,15 +421,13 @@ span {
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .client-list__item {
   width: 170px;
   height: 92px;
-}
-
-.client-list .client-list__item + .client-list__item {
-  margin-left: 30px;
 }
 
 .client-link {
@@ -711,11 +700,8 @@ span {
 .filter {
   display: flex;
   justify-content: center;
+  gap: 8px;
   margin-bottom: 50px;
-}
-
-.filter .filter__item + .filter__item {
-  margin-left: 8px;
 }
 
 .filter__button {

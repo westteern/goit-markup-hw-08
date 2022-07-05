@@ -1,11 +1,8 @@
 .filter {
     @extend %list;
-    @include centredFlex(flex, center, null);    
+    @include centredFlex(flex, center, null);
+    gap: 8px;    
     margin-bottom: 50px;
-}
-
-.filter .filter__item + .filter__item {
-    margin-left: 8px;
 }
 
 .filter__button {

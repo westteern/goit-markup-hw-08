@@ -1,6 +1,8 @@
 .benefits-list {
     @extend %list;
-    display: flex;   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .benefits-list__item {
     width: 270px;
@@ -15,9 +17,6 @@
     background-color: #f5f4fa;
     
     border-radius: 4px;
-}
-.benefits-list .benefits-list__item + .benefits-list__item {
-    margin-left: 30px;
 }
 .benefits-list__titel {
     @extend %titel;
