@@ -63,7 +63,7 @@ span {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  max-width: 480px;
 }
 
 .logo {
@@ -254,12 +254,12 @@ span {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgimg.jpg);
   background-size: cover;
@@ -267,7 +267,7 @@ span {
 }
 .hero .hero__container {
   display: block;
-  width: 696px;
+  width: 360px;
   text-align: center;
 }
 .hero .hero__title {
@@ -278,8 +278,8 @@ span {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
