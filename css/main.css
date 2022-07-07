@@ -512,8 +512,18 @@ span {
 }
 
 .client-list__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .client-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .client-link {
@@ -592,16 +602,29 @@ span {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 528px;
-  min-height: 581px;
+  transform: translate(-50%) scale(1) rotate(0);
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 300ms linear, scale 350ms linear, rotate 350ms linear;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 208px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
 }
 
 .close-btn {
@@ -726,7 +749,6 @@ span {
 .icon-position {
   position: absolute;
   top: 50%;
-  left: 11px;
   transform: translateY(-55%);
   display: block;
   width: 16px;
@@ -735,6 +757,11 @@ span {
   border-radius: 2px;
   pointer-events: none;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .icon-position {
+    left: 11px;
+  }
 }
 
 .checkbox-icon {
@@ -758,10 +785,16 @@ span {
   display: flex;
   justify-content: center;
   padding-left: 24px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-text a {

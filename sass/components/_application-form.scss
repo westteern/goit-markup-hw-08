@@ -110,7 +110,7 @@
     position: absolute;
 
     top: 50%;
-    left: 11px;
+        
     transform: translateY(-55%);
 
     display: block;
@@ -123,6 +123,10 @@
     pointer-events: none;
 
     transition: border-color $prime-animation $prime-transition-timing-function;
+
+    @include desktop {
+        left: 11px;
+    }
 }
 
 .checkbox-icon {
@@ -146,10 +150,15 @@
     @include centredFlex(flex, center, null);
     
     padding-left: 24px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $primery-text-color;
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox-text a {
