@@ -275,34 +275,27 @@ span {
 }
 
 .hero {
-  width: 100%;
+  max-width: 100%;
   height: 400px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
-.hero__container {
+.hero-container {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -310,17 +303,17 @@ span {
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  .hero__container {
+  .hero-container {
     width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .hero-container {
     width: 696px;
   }
 }
 
-.hero__title {
+.hero-title {
   display: inline-block;
   width: 100%;
   margin-top: 0;
@@ -334,7 +327,7 @@ span {
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
-  .hero__title {
+  .hero-title {
     font-size: 44px;
     line-height: 1.36;
   }
