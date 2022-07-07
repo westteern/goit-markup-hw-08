@@ -3,7 +3,7 @@
     top: 93px;
     left: 50%;
     transform: translate(-50%) scale(1) rotate(0);
-    width: 450px;    
+    width: 100%;    
     min-height: 609px;    
     padding: 40px;
     
@@ -13,6 +13,9 @@
     
     transition: transform 300ms linear, scale 350ms linear, rotate 350ms linear;
     
+    @include mobile {
+        width: 450px;
+    }
     @include tablet {
         top: 208px;
     }
@@ -22,6 +25,7 @@
         top: 50%;
         transform: translate(-50%, -50%) scale(1) rotate(0);
     }
+   
 }
 
 .close-btn {

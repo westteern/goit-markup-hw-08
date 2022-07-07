@@ -1,5 +1,13 @@
 .address-list {
-    @extend %list;    
+    @extend %list;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+
 }
 .address-list__item:not(:last-child) {
     margin-bottom: 9px;
