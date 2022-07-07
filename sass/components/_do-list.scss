@@ -1,3 +1,10 @@
+.do {
+    display: none;
+
+    @include desktop {
+        display: initial;
+    }
+}
 .do-list {
     @extend %list;
     display: flex;
