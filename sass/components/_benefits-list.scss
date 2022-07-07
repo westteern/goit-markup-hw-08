@@ -3,14 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 .benefits-list__item {
-    width: 270px;
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }    
 }
+
 .benefits-list__icon-bg {
     @include centredFlex(flex, center, center);
     
-    max-width: 270px;
+    width: 100%;
     height: 120px;
     
     margin-bottom: 30px;
@@ -22,6 +30,8 @@
     @extend %titel;
     
     margin-bottom: 10px;
+
+    text-align: center;
     
     font-weight: 700;
     font-size: 14px;
