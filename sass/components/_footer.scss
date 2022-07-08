@@ -2,17 +2,36 @@
     
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #2f303a;      
+    background-color: #2f303a;
+          
 }
 .footer__content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // @include centredFlex(flex, null, baseline)
+    align-items: center;    
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    @include desktop {
+        flex-wrap: nowrap;
+        justify-content: flex-start;        
+    }
 }
 .footer__logo--centred {
     text-align: center;
+
+    @include tablet {        
+        margin-right: 165px;
+    }
+    @include desktop {
+        text-align: start;
+        margin-right: 70px;
+    }
 }
 .footer__titel {
     @extend %text;
@@ -27,14 +46,22 @@
     text-transform: uppercase;
     
     color: $second-accent-color;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 .footer__social {
     margin-bottom: 20px;
-    // margin-left: 70px;
+    
 }
 .footer__form {
     width: 100%;
-    // margin-left: auto;
+    margin-left: auto;
+    
+    @include desktop {
+        width: auto;
+    }
 }
 .social-link--bcg {
     background-color: rgba(255, 255, 255, 0.1);

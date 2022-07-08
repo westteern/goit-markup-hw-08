@@ -136,10 +136,15 @@ span {
 }
 
 .form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 .form .form__input {
   width: 100%;
@@ -151,11 +156,27 @@ span {
   border-radius: 4px;
   background-color: inherit;
 }
+@media screen and (min-width: 480px) {
+  .form .form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form .form__input {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
 .form .form__button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 28px;
+}
+@media screen and (min-width: 1200px) {
+  .form .form__button {
+    margin-left: 12px;
+  }
 }
 
 .form__button--icon {
@@ -561,9 +582,34 @@ span {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
 
 .footer__logo--centred {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo--centred {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo--centred {
+    text-align: start;
+    margin-right: 70px;
+  }
 }
 
 .footer__titel {
@@ -576,6 +622,11 @@ span {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer__titel {
+    text-align: start;
+  }
+}
 
 .footer__social {
   margin-bottom: 20px;
@@ -583,6 +634,12 @@ span {
 
 .footer__form {
   width: 100%;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    width: auto;
+  }
 }
 
 .social-link--bcg {
@@ -593,12 +650,17 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-list__link {

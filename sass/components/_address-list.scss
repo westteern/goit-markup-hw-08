@@ -5,12 +5,16 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 20px;
     margin-bottom: 60px;
+
+    @include desktop {
+        align-items: flex-start;
+        margin-bottom: 0;        
+    }
 
 }
 .address-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address-list__link {
