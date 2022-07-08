@@ -1,5 +1,12 @@
 .work-card {
-    width: calc((100% - 60px) / 3);
+    
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 60px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .work-card__link {
