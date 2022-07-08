@@ -1,12 +1,23 @@
 .header {
+    position: relative;
     border-bottom: 1px solid #ececec;
 }
 .header__logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: $titel-text-color;
+
+    @include tablet {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .nav {
+    
     @include centredFlex(flex, null, center);
 }
 

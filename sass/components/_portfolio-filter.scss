@@ -2,11 +2,15 @@
     @extend %list;
     @include centredFlex(flex, flex-start, null);
     flex-wrap: wrap;
-    gap: 8px;    
-    margin-bottom: 50px;
+    row-gap: 15px;
+    column-gap: 8px;    
+    margin-bottom: 30px;
 
     @include tablet {
         @include centredFlex(flex, center, null);
+    }
+    @include desktop {
+        margin-bottom: 50px;
     }
 }
 

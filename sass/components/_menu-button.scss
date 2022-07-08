@@ -1,0 +1,22 @@
+.menu-button {
+    display: inline-block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    
+    transition: fill $prime-animation $prime-transition-timing-function;
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+
+}
+.menu-button__close {
+    display: none;
+}
+.menu-button.is-open .menu-button__close {
+    display: block;
+}
+.menu-button.is-open .menu-button__open {
+    display: none;
+}
