@@ -1,6 +1,6 @@
 .header {
-    position: relative;
-    border-bottom: 1px solid #ececec;
+    
+    border-bottom: 1px solid #ececec;    
 }
 .header__logo {
     padding-top: 16px;
@@ -16,8 +16,7 @@
         padding-bottom: 24px;
     }
 }
-.nav {
-    
+.nav {    
     @include centredFlex(flex, null, center);
 }
 

@@ -1,0 +1,22 @@
+.menu-social {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    margin-top: 64px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;    
+    letter-spacing: 0.02em;
+}
+.social-list__item {
+    width: 100%;
+    
+}
+
+.menu-social__link {
+    text-decoration: none;
+    color: $accent-color;
+}
