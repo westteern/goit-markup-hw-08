@@ -1,27 +1,26 @@
 .menu-button {
-    display: inline-block;
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    z-index: 100;
-    
-    transition: fill $prime-animation $prime-transition-timing-function;
+	display: inline-block;
+	margin-left: auto;
+	background-color: transparent;
+	border: none;
+	z-index: 99;
 
-        &:hover,
-        &:focus {
-            fill: $accent-color;
-        }
-    @media screen and (min-width: 768px) {
-        display: none;        
-    }
+	transition: fill $prime-animation $prime-transition-timing-function;
 
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
 }
 .menu-button__close {
-    display: none;
+	display: none;
 }
 .menu-button.is-open .menu-button__close {
-    display: block;
+	display: block;
 }
 .menu-button.is-open .menu-button__open {
-    display: none;
+	display: none;
 }

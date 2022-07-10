@@ -1,27 +1,26 @@
 .menu-container {
-    padding: 48px 40px;
-            
-    &.is-open {
-        display: block;
-        background-color: $primery-bcg-color;
-        z-index: 5;
-        @include tablet {
-            @include centredFlex(flex, null, center);
-            padding: 0;            
-            z-index: 0;
-        }
-    }
+	padding: 48px 40px;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;        
-    }
-    @include tablet {
-        @include centredFlex(flex, null, center);
-        padding: 0;
-        
-    }
+	&.is-open {
+		display: block;
+		background-color: $primery-bcg-color;
+		z-index: 5;
+		@include tablet {
+			@include centredFlex(flex, null, center);
+			padding: 0;
+			z-index: 0;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	@include tablet {
+		@include centredFlex(flex, null, center);
+		padding: 0;
+	}
 }

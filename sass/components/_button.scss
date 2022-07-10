@@ -1,29 +1,29 @@
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    border: none;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
+	border: none;
 
-    background-color: $accent-color;
-    color: $second-accent-color;
+	background-color: $accent-color;
+	color: $second-accent-color;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
-    text-align: center;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+	text-align: center;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    transition: background-color $prime-transition-timing-function $prime-animation;
+	transition: background-color $prime-transition-timing-function $prime-animation;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: #188ce8;
-    }
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #188ce8;
+	}
 }

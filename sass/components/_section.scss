@@ -1,25 +1,25 @@
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include desktop {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 .section-titel {
-    @extend %titel;
-    margin-bottom: 30px;
+	@extend %titel;
+	margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    text-align: center;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	text-align: center;
 
-    @include desktop {
-        margin-bottom: 50px;
-        font-size: 36px;
-        line-height: 1.16;
-    }
+	@include desktop {
+		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.16;
+	}
 }

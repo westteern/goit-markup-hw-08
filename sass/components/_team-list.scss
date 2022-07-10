@@ -1,10 +1,10 @@
 .team {
-    background-color: #f5f4fa;
+	background-color: #f5f4fa;
 }
 .team-list {
-    @extend %list;
+	@extend %list;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }

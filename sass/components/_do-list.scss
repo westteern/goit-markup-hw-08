@@ -1,38 +1,38 @@
 .do {
-    display: none;
+	display: none;
 
-    @include desktop {
-        display: initial;
-    }
+	@include desktop {
+		display: initial;
+	}
 }
 .do-list {
-    @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+	@extend %list;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 
-    &__item {
-        display: flex;
-        position: relative;
-    }
-    &__label {
-        @extend %text;
-        position: absolute;
-        bottom: 0;
-        @include centredFlex(flex, center, center);
-        width: 100%;
-        height: 70px;
-        margin-top: 0;
-        margin-bottom: 0;
-        
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+	&__item {
+		display: flex;
+		position: relative;
+	}
+	&__label {
+		@extend %text;
+		position: absolute;
+		bottom: 0;
+		@include centredFlex(flex, center, center);
+		width: 100%;
+		height: 70px;
+		margin-top: 0;
+		margin-bottom: 0;
 
-        color: $second-accent-color;
-        background: rgba(47, 48, 58, 0.8);
-    }
+		text-align: center;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+
+		color: $second-accent-color;
+		background: rgba(47, 48, 58, 0.8);
+	}
 }

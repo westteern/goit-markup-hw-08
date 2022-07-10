@@ -1,10 +1,10 @@
 .social-list {
-    @extend %list;
-    @include centredFlex(flex, center, null);
-    gap: 10px;
-        
-    .social-list__item {
-        width: 44px;
-        height: 44px;
-    }    
+	@extend %list;
+	@include centredFlex(flex, center, null);
+	gap: 10px;
+
+	.social-list__item {
+		width: 44px;
+		height: 44px;
+	}
 }

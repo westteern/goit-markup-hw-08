@@ -1,65 +1,68 @@
 .contacts {
-    @extend %list;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    gap: 32px;
-    @include tablet {
-        flex-direction: column-reverse;
-        gap: 10px;                
-    }
-    @include desktop {
-        flex-direction: row-reverse;
-        gap: 30px;
-    }        
+	@extend %list;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	gap: 32px;
+	@include tablet {
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+	@include desktop {
+		flex-direction: row-reverse;
+		gap: 30px;
+	}
 }
-.contacts__link {    
-    color: $primery-text-color;
-    
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    
-    
-    text-decoration: none;
+.contacts__link {
+	color: $primery-text-color;
 
-    transition: color $prime-animation $prime-transition-timing-function;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.16;
+	letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-    @include tablet {   
-        display: inline-flex;        
-        align-items: center;     
-        font-size: 12px;
-        line-height: 1.16;
-    }
-    @include desktop {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        font-size: 14px;
-        line-height: 1.14;
-    }
+	text-decoration: none;
+
+	transition: color $prime-animation $prime-transition-timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+	@include tablet {
+		display: inline-flex;
+		align-items: center;
+		font-size: 12px;
+		line-height: 1.16;
+	}
+	@include desktop {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-size: 14px;
+		line-height: 1.14;
+	}
 }
-.contacts__link--accent {    
-    color: $accent-color;
-    font-size: 34px;
-    line-height: 1.17;
+.contacts__link--accent {
+	color: $accent-color;
+	font-size: 34px;
+	line-height: 1.17;
 
-    @include tablet {
-        color: $primery-text-color;
-        font-size: 12px;
-        line-height: 1.16;
-    }
+	@include tablet {
+		color: $primery-text-color;
+		font-size: 12px;
+		line-height: 1.16;
+	}
+	@include desktop {
+		font-size: 14px;
+		line-height: 1.14;
+	}
 }
 
 .contacts__icon {
-    display: none;
-    margin-right: 10px;
-    fill: currentColor;
-    @include tablet {
-        display: block;
-    }
+	display: none;
+	margin-right: 10px;
+	fill: currentColor;
+	@include tablet {
+		display: block;
+	}
 }

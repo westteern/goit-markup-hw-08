@@ -1,80 +1,80 @@
 .site-nav {
-    @extend %list;    
-    margin-bottom: 302px;
-    @include tablet {
-        display: flex;
-        margin-right: 84px;
-        margin-bottom: 0;
-    }
-    @include desktop {
-        margin-right: 305px;
-    }
+	@extend %list;
+	margin-bottom: 302px;
+	@include tablet {
+		display: flex;
+		margin-right: 84px;
+		margin-bottom: 0;
+	}
+	@include desktop {
+		margin-right: 305px;
+	}
 }
 
-.site-nav__item:not(:last-child) {    
-    margin-bottom: 30px;
-    @include tablet {
-        margin-bottom: 0;
-        margin-right: 50px;
-    }
+.site-nav__item:not(:last-child) {
+	margin-bottom: 30px;
+	@include tablet {
+		margin-bottom: 0;
+		margin-right: 50px;
+	}
 }
 
 .site-nav__link {
-    display: inline-block;   
+	display: inline-block;
 
-    color: $titel-text-color;
+	color: $titel-text-color;
 
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
 
-    text-decoration: none;
+	text-decoration: none;
 
-    transition: color $prime-animation $prime-transition-timing-function;
+	transition: color $prime-animation $prime-transition-timing-function;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-    @include tablet {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        font-size: 14px;
-        line-height: 1.14;
-    }    
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+	@include tablet {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-size: 14px;
+		line-height: 1.14;
+	}
 }
 .site-nav__link--current {
-    position: relative;
-    color: $accent-color;
+	position: relative;
+	color: $accent-color;
 
-    &:after {
-        content: "";
-        position: absolute;
-        display: block;
-        bottom: -1px;
-        
-        width: 100%;
-        height: 4px;
-        
-        background-color: $accent-color;
-        transform: scale(0);
-        border-radius: 2px;
-        
-        animation-name: appearInFromCenter;
-        animation-duration: 500ms;
-        animation-timing-function: linear;
-        animation-delay: 250ms;
-        animation-fill-mode: forwards;
-    }
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		bottom: -1px;
+
+		width: 100%;
+		height: 4px;
+
+		background-color: $accent-color;
+		transform: scale(0);
+		border-radius: 2px;
+
+		animation-name: appearInFromCenter;
+		animation-duration: 500ms;
+		animation-timing-function: linear;
+		animation-delay: 250ms;
+		animation-fill-mode: forwards;
+	}
 }
 
 @keyframes appearInFromCenter {
-    0% {
-        transform: scale(0);
-    }
+	0% {
+		transform: scale(0);
+	}
 
-    100% {
-        transform: scale(1);
-    }
+	100% {
+		transform: scale(1);
+	}
 }

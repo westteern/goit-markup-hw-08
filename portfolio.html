@@ -23,13 +23,13 @@
 				<a class="logo header__logo" lang="en" href="/">
 					<span class="logo--blue">Web</span>Studio
 				</a>
-				<button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+				<button type="button" class="menu-button" aria-expanded="false" data-menu-button>
 					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
 						<use class="menu-button__close" href="./images/icons.svg#close-mobile"></use>
 						<use class="menu-button__open" href="./images/icons.svg#mobile-menu"></use>
 					</svg>
 				</button>
-				<div class="menu-container is-open" data-menu>
+				<div class="menu-container" data-menu>
 					<ul class="site-nav">
 						<li class="site-nav__item"><a href="./index.html"
 								class="site-nav__link">Студия</a></li>
@@ -101,12 +101,31 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img
-										class="img"
-										src="./images/tehnohryak.jpg"
-										alt="ноутбук с изображением анкет сотрудников на экране"
-										width="370"
-									/>
+									<picture>
+										<source srcset="
+											./images/mobile/tehnohryak.jpg 1x,
+											./images/mobile/tehnohryak@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/tehnohryak.jpg 1x,
+											./images/tablet/tehnohryak@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/tehnohryak.jpg 1x,
+											./images/desktop/tehnohryak@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img
+											class="img"
+											src="./images/desktop/tehnohryak.jpg"
+											alt="ноутбук с изображением анкет сотрудников на экране"											
+										/>
+									</picture>									
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -121,12 +140,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img
-										class="img"
-										src="./images/basketball.jpg"
-										alt="плакат с изображением баскетоболистов"
-										width="370"
-									/>
+									<picture>
+										<source srcset="
+											./images/mobile/basketball.jpg 1x,
+											./images/mobile/basketball@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/basketball.jpg 1x,
+											./images/tablet/basketball@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/basketball.jpg 1x,
+											./images/desktop/basketball@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/basketball.jpg" alt="плакат с изображением баскетоболистов" />
+									</picture>									
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -144,12 +178,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img
-										class="img"
-										src="./images/seafood.jpg"
-										alt="рисунок рыбы с название ресторана морепродуктов"
-										width="370"
-									/>
+									<picture>
+										<source srcset="
+											./images/mobile/seafood.jpg 1x,
+											./images/mobile/seafood@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/seafood.jpg 1x,
+											./images/tablet/seafood@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/seafood.jpg 1x,
+											./images/desktop/seafood@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/seafood.jpg" alt="рисунок рыбы с название ресторана морепродуктов" />
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -167,7 +216,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img class="img" src="./images/headphone.jpg" alt="наушники" width="370" />
+									<picture>
+										<source srcset="
+											./images/mobile/headphone.jpg 1x,
+											./images/mobile/headphone@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/headphone.jpg 1x,
+											./images/tablet/headphone@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/headphone.jpg 1x,
+											./images/desktop/headphone@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/headphone.jpg" alt="наушники"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -185,7 +254,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img class="img" src="./images/boxes.jpg" alt="две подарочные коробки" width="370" />
+									<picture>
+										<source srcset="
+											./images/mobile/boxes.jpg 1x,
+											./images/mobile/boxes@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/boxes.jpg 1x,
+											./images/tablet/boxes@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/boxes.jpg 1x,
+											./images/desktop/boxes@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/boxes.jpg" alt="две подарочные коробки"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -203,7 +292,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img class="img" src="./images/display.jpg" alt="дисплей с интерфейсом программы" width="370" />
+									<picture>
+										<source srcset="
+											./images/mobile/display.jpg 1x,
+											./images/mobile/display@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/display.jpg 1x,
+											./images/tablet/display@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/display.jpg 1x,
+											./images/desktop/display@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/display.jpg" alt="дисплей с интерфейсом программы"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -218,7 +327,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img class="img" src="./images/magazine.jpg" alt="открытый журнал с фото и заголовками" width="370" />
+									<picture>
+										<source srcset="
+											./images/mobile/magazine.jpg 1x,
+											./images/mobile/magazine@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/magazine.jpg 1x,
+											./images/tablet/magazine@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/magazine.jpg 1x,
+											./images/desktop/magazine@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/magazine.jpg" alt="открытый журнал с фото и заголовками"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -236,7 +365,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img class="img" src="./images/tag.jpg" alt="бирка с надписью" width="370" />
+									<picture>
+										<source srcset="
+											./images/mobile/tag.jpg 1x,
+											./images/mobile/tag@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/tag.jpg 1x,
+											./images/tablet/tag@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/tag.jpg 1x,
+											./images/desktop/tag@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/tag.jpg" alt="бирка с надписью"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -254,12 +403,27 @@
 						<li class="work-card">
 							<a class="work-card__link" href="">
 								<div class="work-card__box">
-									<img
-										class="img"
-										src="./images/growinglaptop.jpg"
-										alt="ноутбук с изображением рекламы компании на экране"
-										width="370"
-									/>
+									<picture>
+										<source srcset="
+											./images/mobile/growinglaptop.jpg 1x,
+											./images/mobile/growinglaptop@2x.jpg 2x
+											" 
+											media="(min-width: 480px)"
+										>
+										<source srcset="
+											./images/tablet/growinglaptop.jpg 1x,
+											./images/tablet/growinglaptop@2x.jpg 2x
+											" 
+											media="(min-width: 768px)"
+										>
+										<source srcset="
+											./images/desktop/growinglaptop.jpg 1x,
+											./images/desktop/growinglaptop@2x.jpg 2x
+											" 
+											media="(min-width: 1200px)"
+										>
+										<img class="img" src="./images/desktop/growinglaptop.jpg" alt="ноутбук с изображением рекламы компании на экране"/>
+									</picture>
 									<p class="work-card__overlay">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.

@@ -1,26 +1,26 @@
 .social-link {
-   @include centredFlex(flex, center, center);
-    width: 100%;
-    height: 100%;
+	@include centredFlex(flex, center, center);
+	width: 100%;
+	height: 100%;
 
-    color: $primery-icon-color;
-    background-color: transparent;
+	color: $primery-icon-color;
+	background-color: transparent;
 
-    border-radius: 50px;
+	border-radius: 50px;
 
-    transition: color $prime-transition-timing-function $prime-animation,
-    background-color $prime-transition-timing-function $prime-animation;
+	transition: color $prime-transition-timing-function $prime-animation,
+		background-color $prime-transition-timing-function $prime-animation;
 
-    .social-link__icon {
-        fill: currentColor;
-    }
+	.social-link__icon {
+		fill: currentColor;
+	}
 
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-        color: $second-accent-color;
-    }
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		color: $second-accent-color;
+	}
 }
 .social-link__icon--white {
-    color: $second-accent-color;
+	color: $second-accent-color;
 }
