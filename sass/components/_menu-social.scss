@@ -1,6 +1,6 @@
-.menu-social {
+.menu-social {    
     @extend %list;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     
 
@@ -10,13 +10,28 @@
     font-size: 18px;
     line-height: 1.22;    
     letter-spacing: 0.02em;
+
+    @include tablet {
+        display: none;
+    }        
 }
-.social-list__item {
-    width: 100%;
-    
+
+.menu-social__item {
+    position: relative;
+}
+.menu-social__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);           
+}
+.menu-social__item:not(:first-child) {
+    padding-left: 10px;
 }
 
 .menu-social__link {
     text-decoration: none;
-    color: $accent-color;
+    color: $accent-color;     
 }
+
+
+
+
