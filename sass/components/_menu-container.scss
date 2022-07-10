@@ -1,13 +1,14 @@
 .menu-container {
-    padding: 48px 40px;     
-    background-color: $primery-bcg-color;
-        
+    padding: 48px 40px;
+            
     &.is-open {
         display: block;
+        background-color: $primery-bcg-color;
         z-index: 5;
         @include tablet {
             @include centredFlex(flex, null, center);
             padding: 0;            
+            z-index: 0;
         }
     }
 
@@ -21,5 +22,6 @@
     @include tablet {
         @include centredFlex(flex, null, center);
         padding: 0;
+        
     }
 }
