@@ -40,16 +40,22 @@
 					<ul class="contacts">
 						<li class="contacts__item">
 							<a class="contacts__link contacts__link--accent" href="tel:+380961111111">
-								<svg class="contacts__icon" width="10" height="16">
+								<svg class="contacts__icon contacts__icon--big" width="10" height="16">
 									<use href="./images/icons.svg#smartphone"></use>
+								</svg>
+								<svg class="contacts__icon contacts__icon--small" width="10" height="14">
+									<use href="./images/icons.svg#smartphone-tablet"></use>
 								</svg>
 								+38 096 111 11 11
 							</a>
 						</li>
 						<li class="contacts__item">
 							<a class="contacts__link" href="mailto:info@devstudio.com">
-								<svg class="contacts__icon" width="16" height="12">
-									<use href="./images/icons.svg#envelope"></use>
+								<svg class="contacts__icon contacts__icon--big" width="16" height="12">
+									<use class="contacts__icon--big" href="./images/icons.svg#envelope"></use>
+								</svg>
+								<svg class="contacts__icon contacts__icon--small" width="14" height="10">
+									<use class="contacts__icon--small" href="./images/icons.svg#envelope-tablet"></use>
 								</svg>
 								info@devstudio.com
 							</a>
@@ -125,11 +131,13 @@
 											src="./images/desktop/tehnohryak.jpg"
 											alt="ноутбук с изображением анкет сотрудников на экране"											
 										/>
-									</picture>									
-									<p class="work-card__overlay">
-										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-										посетителю получить исчерпывающие сведения о компании или частном лице.
-									</p>
+									</picture>
+									<div class="work-card__overlay">
+										<p class="work-card__overlay-text">
+											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+											посетителю получить исчерпывающие сведения о компании или частном лице.
+										</p>
+									</div>																		
 								</div>
 								<div class="border">
 									<h2 class="work-card__titel">Технокряк</h2>

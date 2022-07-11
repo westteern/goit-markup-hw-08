@@ -30,28 +30,39 @@
 	overflow: hidden;
 }
 .work-card__overlay {
+	display: flex;
+	align-items: center;
+	// width: 100%;
 	position: absolute;
 	top: 0;
+	
+	padding: 77px 24px;
 
-	padding: 63px 24px;
-
-	height: 100%;
-
-	@extend %text;
-
-	font-size: 18px;
-	line-height: 1.55;
-	letter-spacing: 0.03em;
-	color: #ffffff;
+	height: 100%;	
 
 	background: rgba(33, 150, 243, 0.9);
 
 	transform: translateY(calc(+100% + 1px));
 	transition: transform $prime-transition-timing-function $prime-animation;
+	@include tablet {
+		padding: 49px 24px;	
+	}
+	@include desktop {
+		padding: 63px 24px;
+	}			
+}
+.work-card__overlay-text {		
+	@extend %text;	
+
+	font-size: 18px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	
 }
 .work-card__link:hover .work-card__overlay,
 .work-card__link:focus .work-card__overlay {
-	transform: translateY(0);
+	transform: translateY(0);	
 }
 .work-card__titel {
 	@extend %titel;

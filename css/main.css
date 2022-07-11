@@ -10,7 +10,7 @@
   color: #212121;
 }
 
-.work-card__text, .work-card__overlay, .footer__titel, .team-card .team-card__text, .do-list__label, .benefits-list__text {
+.work-card__text, .work-card__overlay-text, .footer__titel, .team-card .team-card__text, .do-list__label, .benefits-list__text {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -472,12 +472,34 @@ span {
 }
 
 .contacts__icon {
-  display: none;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
+
+@media screen and (min-width: 480px) {
+  .contacts__icon--small {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
-  .contacts__icon {
+  .contacts__icon--small {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contacts__icon--big {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--big {
+    margin-right: 10px;
     display: block;
   }
 }
@@ -1179,17 +1201,32 @@ span {
 }
 
 .work-card__overlay {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(calc(100% + 1px));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .work-card__overlay {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-card__overlay {
+    padding: 63px 24px;
+  }
+}
+
+.work-card__overlay-text {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(calc(100% + 1px));
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-card__link:hover .work-card__overlay,

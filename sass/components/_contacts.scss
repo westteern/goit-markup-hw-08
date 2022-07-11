@@ -58,11 +58,27 @@
 	}
 }
 
-.contacts__icon {
-	display: none;
-	margin-right: 10px;
-	fill: currentColor;
+.contacts__icon {	
+	margin-right: 8px;
+	fill: currentColor;			
+}
+.contacts__icon--small {
+	@include mobile {
+		display: none;
+	}
 	@include tablet {
-		display: block;
+		display: block;		
+	}
+	@include desktop {
+		display: none;
+	}
+}
+.contacts__icon--big {
+	@include mobile {
+		display: none;
+	}
+	@include desktop {
+		margin-right: 10px;
+		display: block;		
 	}
 }
