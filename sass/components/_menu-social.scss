@@ -29,4 +29,7 @@
 .menu-social__link {
 	text-decoration: none;
 	color: $accent-color;
+	&:hover {
+		color: #188ce8;
+	}
 }

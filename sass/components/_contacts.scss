@@ -46,6 +46,9 @@
 	color: $accent-color;
 	font-size: 34px;
 	line-height: 1.17;
+	&:hover {
+		color: #188ce8;
+	}
 
 	@include tablet {
 		color: $primery-text-color;
@@ -58,16 +61,17 @@
 	}
 }
 
-.contacts__icon {	
+.contacts__icon {
+	display: none;
 	margin-right: 8px;
-	fill: currentColor;			
+	fill: currentColor;
 }
 .contacts__icon--small {
 	@include mobile {
 		display: none;
 	}
 	@include tablet {
-		display: block;		
+		display: block;
 	}
 	@include desktop {
 		display: none;
@@ -79,6 +83,6 @@
 	}
 	@include desktop {
 		margin-right: 10px;
-		display: block;		
+		display: block;
 	}
 }
