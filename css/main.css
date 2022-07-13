@@ -45,6 +45,10 @@ span {
   display: inline-block;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -264,6 +268,7 @@ span {
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -287,7 +292,7 @@ span {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -438,12 +443,26 @@ span {
   }
 }
 
-.contacts__item:first-child .contacts__link {
-  padding-bottom: 21px;
+@media screen and (min-width: 768px) {
+  .contacts__item:first-child .contacts__link {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child .contacts__link {
+    padding: 32px 0;
+  }
 }
 
-.contacts__item:last-child .contacts__link {
-  padding-top: 21px;
+@media screen and (min-width: 768px) {
+  .contacts__item:last-child .contacts__link {
+    padding-top: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:last-child .contacts__link {
+    padding: 32px 0;
+  }
 }
 
 .contacts__link {
@@ -468,8 +487,6 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }

@@ -13,11 +13,22 @@
 		gap: 30px;
 	}
 }
-.contacts__item:first-child .contacts__link{
-	padding-bottom: 21px;
+.contacts__item:first-child .contacts__link {
+	@include tablet {
+		padding-bottom: 21px;
+	}
+	@include desktop {
+		padding: 32px 0;
+	}
+	
 }
-.contacts__item:last-child .contacts__link{
-	padding-top: 21px;
+.contacts__item:last-child .contacts__link {
+	@include tablet {
+		padding-top: 21px;
+	}
+	@include desktop {
+		padding: 32px 0;		
+	}	
 }
 .contacts__link {
 	color: $primery-text-color;
@@ -41,9 +52,7 @@
 		font-size: 12px;
 		line-height: 1.16;
 	}
-	@include desktop {
-		padding-top: 32px;
-		padding-bottom: 32px;
+	@include desktop {		
 		font-size: 14px;
 		line-height: 1.14;
 	}

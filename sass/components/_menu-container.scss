@@ -1,4 +1,4 @@
-.menu-container {
+.menu-container {	
 	padding: 48px 40px;
 
 	&.is-open {
@@ -14,7 +14,7 @@
 
 	@media screen and (max-width: 767px) {
 		display: none;
-		position: absolute;
+		position: fixed;		
 		top: 0;
 		left: 0;
 		width: 100%;

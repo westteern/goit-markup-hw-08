@@ -1,9 +1,10 @@
-.menu-button {	
+.menu-button {					
 	display: inline-block;
 	margin-left: auto;
 	background-color: transparent;
 	border: none;
 	z-index: 99;
+	
 
 	transition: fill $prime-transition-timing-function $prime-animation;
 
@@ -11,14 +12,14 @@
 		display: none;
 	}
 }
-.menu-button__close {
-	display: none;
+.menu-button__close {				
+	display: none;		
 }
-.menu-button.is-open .menu-button__close {
-	display: block;
+.menu-button.is-open .menu-button__close {		
+	display: block;		
 }
 .menu-button.is-open .menu-button__open {
-	display: none;
+	display: none;	
 }
 .menu-button:hover,
 .menu-button:focus {

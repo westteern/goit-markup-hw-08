@@ -1,4 +1,4 @@
-.header {
+.header {	
 	border-bottom: 1px solid #ececec;
 }
 .header__logo {
@@ -17,5 +17,6 @@
 	}
 }
 .nav {
+	position: relative;
 	@include centredFlex(flex, null, center);
 }
