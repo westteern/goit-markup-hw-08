@@ -155,6 +155,7 @@ span {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .form .form__input {
@@ -166,6 +167,10 @@ span {
     margin-bottom: 0;
     width: 358px;
   }
+}
+.form .form__input:hover, .form .form__input:focus {
+  outline: none;
+  border-color: #2196f3;
 }
 .form .form__button {
   display: flex;
@@ -210,7 +215,7 @@ span {
   background-color: transparent;
   border: none;
   z-index: 99;
-  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -230,9 +235,8 @@ span {
   display: none;
 }
 
-.menu-button__close:hover, .menu-button__close:focus,
-.menu-button__open:hover,
-.menu-button__open:focus {
+.menu-button:hover,
+.menu-button:focus {
   fill: #2196f3;
 }
 
@@ -367,7 +371,7 @@ span {
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
@@ -389,7 +393,7 @@ span {
   content: "";
   position: absolute;
   display: block;
-  bottom: -1px;
+  bottom: -3px;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
@@ -400,6 +404,11 @@ span {
   animation-timing-function: linear;
   animation-delay: 250ms;
   animation-fill-mode: forwards;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link--current:after {
+    bottom: -1px;
+  }
 }
 
 @keyframes appearInFromCenter {
@@ -429,6 +438,14 @@ span {
   }
 }
 
+.contacts__item:first-child .contacts__link {
+  padding-bottom: 21px;
+}
+
+.contacts__item:last-child .contacts__link {
+  padding-top: 21px;
+}
+
 .contacts__link {
   color: #757575;
   font-weight: 500;
@@ -436,7 +453,7 @@ span {
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
@@ -631,6 +648,11 @@ span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .benefits-list__titel {
+    text-align: start;
+  }
+}
 
 .benefits-list__text {
   font-size: 14px;
@@ -643,7 +665,8 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .do {
-    display: initial;
+    display: block;
+    padding-top: 0;
   }
 }
 
@@ -787,7 +810,7 @@ span {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link__icon {
   fill: currentColor;
@@ -803,37 +826,41 @@ span {
   background-color: #2f303a;
 }
 
-.footer__content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__adaptive-container {
+  text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer__content {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .footer__adaptive-container {
+    display: flex;
     justify-content: center;
     align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__content {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+  .footer__adaptive-container {
+    margin-bottom: 0;
   }
 }
 
-.footer__logo--centred {
-  text-align: center;
+.footer__logo-centred {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer__logo--centred {
+  .footer__logo-centred {
+    margin-bottom: 0;
     margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__logo--centred {
+  .footer__logo-centred {
     text-align: start;
     margin-right: 70px;
   }
@@ -855,17 +882,20 @@ span {
   }
 }
 
-.footer__social {
-  margin-bottom: 20px;
-}
-
 .footer__form {
   width: 100%;
-  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__form {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
-    width: auto;
+    margin-right: 0;
+    width: 570px;
   }
 }
 
@@ -877,7 +907,6 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .address-list {
@@ -952,7 +981,7 @@ span {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover, .close-btn:focus {
   fill: #2196f3;
@@ -1196,7 +1225,7 @@ span {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-card__link:hover, .work-card__link:focus, .work-card__link:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

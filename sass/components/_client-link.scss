@@ -9,8 +9,8 @@
 	border-radius: 4px;
 	color: #afb1b8;
 
-	transition: color $prime-animation $prime-transition-timing-function,
-		border $prime-animation $prime-transition-timing-function;
+	transition: color $prime-transition-timing-function $prime-animation,
+		border $prime-transition-timing-function $prime-animation;
 
 	&__icon {
 		fill: currentColor;

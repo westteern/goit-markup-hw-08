@@ -13,6 +13,12 @@
 		gap: 30px;
 	}
 }
+.contacts__item:first-child .contacts__link{
+	padding-bottom: 21px;
+}
+.contacts__item:last-child .contacts__link{
+	padding-top: 21px;
+}
 .contacts__link {
 	color: $primery-text-color;
 
@@ -23,7 +29,7 @@
 
 	text-decoration: none;
 
-	transition: color $prime-animation $prime-transition-timing-function;
+	transition: color $prime-transition-timing-function $prime-animation;
 
 	&:hover,
 	&:focus {

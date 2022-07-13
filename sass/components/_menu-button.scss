@@ -1,11 +1,11 @@
-.menu-button {
+.menu-button {	
 	display: inline-block;
 	margin-left: auto;
 	background-color: transparent;
 	border: none;
 	z-index: 99;
 
-	transition: fill $prime-animation $prime-transition-timing-function;
+	transition: fill $prime-transition-timing-function $prime-animation;
 
 	@media screen and (min-width: 768px) {
 		display: none;
@@ -20,10 +20,8 @@
 .menu-button.is-open .menu-button__open {
 	display: none;
 }
-.menu-button__close,
-.menu-button__open {
-	&:hover,
-	&:focus {
-		fill: $accent-color;
-	}
+.menu-button:hover,
+.menu-button:focus {
+	fill: $accent-color;
 }
+

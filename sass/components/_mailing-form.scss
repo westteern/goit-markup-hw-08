@@ -21,12 +21,18 @@
 
 		background-color: inherit;
 
+		transition: color $prime-transition-timing-function $prime-animation;
+
 		@include mobile {
 			width: 450px;
 		}
 		@include desktop {
 			margin-bottom: 0;
 			width: 358px;
+		}
+		&:hover, &:focus {
+			outline: none;			
+			border-color: $accent-color;
 		}
 	}
 	.form__button {

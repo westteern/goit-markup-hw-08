@@ -2,7 +2,8 @@
 	display: none;
 
 	@include desktop {
-		display: initial;
+		display: block;
+		padding-top: 0;		
 	}
 }
 .do-list {

@@ -38,6 +38,9 @@
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	@include desktop {
+		text-align: start;
+	}
 }
 .benefits-list__text {
 	@extend %text;
