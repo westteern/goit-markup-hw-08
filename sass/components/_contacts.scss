@@ -1,8 +1,7 @@
 .contacts {
 	@extend %list;
 	display: flex;
-	flex-direction: column;
-	margin-left: auto;
+	flex-direction: column;		
 	gap: 32px;
 	@include tablet {
 		flex-direction: column-reverse;
@@ -46,6 +45,7 @@
 	&:focus {
 		color: $accent-color;
 	}
+	
 	@include tablet {
 		display: inline-flex;
 		align-items: center;
@@ -63,6 +63,10 @@
 	line-height: 1.17;
 	&:hover {
 		color: #188ce8;
+	}
+	@media screen and (max-width: 376px) {
+		font-size: 24px;
+		line-height: 1.16;
 	}
 
 	@include tablet {

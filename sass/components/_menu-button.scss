@@ -16,13 +16,15 @@
 	display: none;		
 }
 .menu-button.is-open .menu-button__close {		
-	display: block;		
+	display: block;				
 }
 .menu-button.is-open .menu-button__open {
 	display: none;	
 }
-.menu-button:hover,
-.menu-button:focus {
-	fill: $accent-color;
+.menu-button {
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}	
 }
 

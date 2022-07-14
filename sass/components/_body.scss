@@ -1,7 +1,12 @@
 body {
 	background-color: $primery-bcg-color;
 	color: $primery-text-color;
-	font-family: $primery-font-family;
+	font-family: $primery-font-family;	
+}
+body.menu-open {
+	@media screen and (max-width: 767px) {
+		overflow: hidden;
+	}	
 }
 img {
 	display: block;
@@ -12,6 +17,4 @@ img {
 span {
 	display: inline-block;
 }
-body.menu-open {
-	overflow: hidden;
-}
+
