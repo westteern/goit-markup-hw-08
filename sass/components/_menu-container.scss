@@ -1,10 +1,10 @@
-.menu-container {	
-	padding: 48px 40px;	
+.menu-container {
+	padding: 48px 40px;
 	&.is-open {
-		display: block;		
+		opacity: 1;
 		background-color: $primery-bcg-color;
-		z-index: 5;						
-				
+		z-index: 5;
+
 		@media screen and (max-width: 479px) {
 			padding-bottom: 58px;
 		}
@@ -12,7 +12,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-		}		
+		}
 		@include tablet {
 			@include centredFlex(flex, null, center);
 			padding: 0;
@@ -20,14 +20,18 @@
 		}
 	}
 	@media screen and (max-width: 767px) {
-		display: none;
-		position: fixed;		
+		opacity: 0;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		max-height: 796px;		
+		max-height: 796px;
+		background-color: $primery-bcg-color;
+		transition: opacity $prime-transition-timing-function $prime-animation;
+		z-index: -1;
 	}
+
 	@include tablet {
 		@include centredFlex(flex, null, center);
 		padding: 0;
